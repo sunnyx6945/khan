@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(250,247,240);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+/* Left side (logo image) */
+.left img {
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Right side (currency dropdown) */
+.right select {
+    padding: 10px 40px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.hero1{
+    background-image: url("../mutimedia/image/lecture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* LAYOUT */
+.total{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:85%;
+    margin:auto;
+    height:100%;
+}
+
+/* LEFT TEXT */
+.unlock{
+    max-width:50%;
+    color:white;
+}
+
+.unlock h3{
+    font-size:40px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.unlock p{
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+.second{
+    margin-top:10px;
+}
+
+/* RIGHT CARD */
+.make{
+    width:380px;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+}
+
+.make h3{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+/* TOGGLE */
+.main{
+    display:flex;
+    background:#e3ecfd;
+    border-radius:30px;
+    overflow:hidden;
+    margin:15px 0;
+}
+
+.main button{
+    flex:1;
+    padding:10px;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.main .active{
+    background:#1865f2;
+    color:white;
+    border-radius:30px;
+}
+
+/* TEXT */
+.choose{
+    text-align:center;
+    margin:15px 0;
+}
+
+/* DROPDOWN */
+.dropdown{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    margin-bottom:15px;
+}
+
+/* AMOUNT BUTTONS */
+.amounts{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.amounts button{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#e3ecfd;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.amounts .active{
+    background:#1865f2;
+    color:white;
+}
+
+/* OTHER INPUT */
+.other{
+    display:flex;
+    margin-top:15px;
+    border-radius:10px;
+    overflow:hidden;
+    border:1px solid #ccc;
+}
+
+.other span{
+    padding:10px;
+    background:#e3ecfd;
+}
+
+.other input{
+    border:none;
+    padding:10px;
+    width:100%;
+}
+.other{
+    display:flex;
+    margin-top:15px;
+    border-radius:10px;
+    overflow:hidden;
+    border:1px solid #ddd;
+}
+
+.other span{
+    padding:12px;
+    background:#e3ecfd;
+    font-weight:500;
+}
+
+.other input{
+    border:none;
+    padding:12px;
+    width:100%;
+    outline:none;
+}
+.dedicate{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:15px 0;
+    font-size:14px;
+}
+.bottom{
+    background:#f5f5f5;
+    padding:20px;
+    margin:20px -20px -20px -20px; /* stretch full width */
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+.donate-btn{
+    width:100%;
+    padding:15px;
+    background:black;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+.donate-btn:hover{
+    opacity:0.9;
+}
+.grateful{
+    max-width: 90%;
+    margin: 70px auto;
+}
+.grate{
+    display: flex;
+    justify-content: space-between;
+}
+.grate img{
+    width: 300px;
+}
+.grate1{
+    max-width: 33.3%;
+}
+.grate1 h3{
+    max-width: 70%;
+    
+}
+.grate1 .great2.great3, p{
+    font-family: Lato, "Lato Fallback";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(0, 0, 0);
+max-width: 92%;
+padding-top: 20px;
+}
+.provide{
+    background-color: rgb(191,230,221);
+    width: 100%;
+    height: 90vh;
+     
+}
+
+.provider{
+     margin: 0 auto;
+    padding: 140px 0;
+}
+.provider h2{
+    font-family: "Source Serif 4", "Source Serif 4 Fallback";
+font-size: 32px;
+font-weight: 400;
+line-height: 38.4px;
+color: rgb(0, 0, 0);
+width: 35%;
+text-align: center;
+margin: 0 auto;
+}
+.provider p{
+    text-align: center;
+    margin: 0 auto;
+    width: 58%;
+    font-family: Lato, "Lato Fallback";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(0, 0, 0); 
+}
+.togethers{
+    width: 600px;
+    margin: 10px 300px;
+    
+}
+.joining{
+    max-width: 70%;
+    margin: 60px auto;
+}
+.join h3{
+    text-align: center;
+    font-family: "Source Serif 4", "Source Serif 4 Fallback";
+font-size: 32px;
+font-weight: 400;
+line-height: 38.4px;
+color: rgb(0, 0, 0);
+}
+.join p{
+    text-align: center ;
+    font-family: Lato, "Lato Fallback";
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(0, 0, 0);
+}
+.joining button{
+    padding: 5px 10px;
+}
+/* SECTION BACKGROUND */
+.tiers{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    width:85%;
+    margin:60px auto;
+}
+
+.tier-card{
+    width:100%;
+}
+
+/* IMAGE */
+.tier-img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+/* TEXT */
+.tier-card h3{
+    margin-bottom:10px;
+}
+
+.tier-card p{
+    margin-bottom:10px;
+    line-height:1.5;
+}
+
+.italic{
+    font-style:italic;
+}
+
+/* BUTTON */
+.tier-card button{
+    margin-top:15px;
+    padding:12px 25px;
+    background:#1865f2;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.tier-card button:hover{
+    opacity:0.9;
+}
+/* SECTION */
+.plan{
+    background:#5b2458; /* purple */
+    padding:60px 0;
+}
+
+/* CONTAINER */
+.plan-container{
+    width:95%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* LEFT IMAGE */
+.plan-img img{
+    width:450px;
+    max-width:100%;
+}
+
+/* RIGHT TEXT */
+.plan-text{
+    max-width:500px;
+    color:white;
+    text-align:left;
+}
+
+.plan-text h2{
+    font-size:40px;
+    font-family: serif;
+    margin-bottom:20px;
+    text-align: right;
+}
+
+.plan-text p{
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:25px;
+    color: white;
+    text-align: right;
+    margin-left: 50px;
+}
+
+/* BUTTON */
+.plan-text button{
+    background:#1865f2;
+    color:white;
+    padding:20px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    margin-left: 300px;
+    
+}   
+
+.plan-text button:hover{
+    opacity:0.9;
+}
+.double{
+     padding:100px 0;
+     background-color: white;
+}
+.doubleorg{
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.double-img img{
+    width: 300px;
+}
+.under{
+    color: blue;
+    text-decoration: underline;
+}
+.dee h3{
+    font-family: "Source Serif 4", "Source Serif 4 Fallback";
+font-size: 32px;
+font-weight: 500;
+line-height: 38.4px;
+color: rgb(33, 36, 44);
+}
+.dee p{
+font-family: Lato, "Lato Fallback";
+font-size: 19px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(33, 36, 44);
+    max-width: 75%;
+} 
+.dee button{
+    padding: 20px 30px;
+    text-align: center;
+    background-color: #1865f2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-top: 20px;
+}  
+.terms{
+    background-color: white;
+ 
+}
+.term{
+    max-width: 75%;
+    margin: 0 auto;
+}
+.pee{
+    text-align: center;
+}
+.term p{
+    font-family: Lato, "Lato Fallback";
+font-size: 14px;
+font-weight: 400;
+line-height: 25px;
+color: rgb(33, 36, 44);
+text-align: center;
+}
+.faqr{
+    background-color: white;
+    margin-top: 30px;
+}
+.faq{
+    width:70%;
+    margin:60px auto;
+    background:white;
+    /* padding:30px; */
+    border-radius:10px;
+    padding:40px 20px 20px 20px;
+    position:relative;
+    background:#fff;
+
+}
+.faq-title{
+    position:absolute;
+    top:-12px;
+    left:20px;
+    background:#fff; /* same as container */
+    padding:0 10px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.faq h2{
+    margin-bottom:20px;
+}
+
+/* ITEM */
+.faq-item{
+    border-top:1px solid #ddd;
+    padding:15px 0;
+     box-shadow: 0 0 0 2px rgba(0,0,0,0.03);
+}
+
+/* QUESTION */
+.faq-question{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+}
+
+.faq-question h4{
+    font-size:16px;
+}
+
+/* ICON */
+.faq-question i{
+    font-size:18px;
+}
+
+/* ANSWER */
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:0.3s ease;
+}
+
+/* ACTIVE */
+.faq-item.active .faq-answer{
+    max-height:200px;
+    margin-top:10px;
+}
+.faq-item.active{
+  box-shadow: 0 0 0 2px #eef1f5;
+  border: none;
+
+}
+.faq-answer p{
+    font-family: Lato, "Lato Fallback";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(33, 36, 44);
+}
+/* FOOTER TOP */
+.footer-top{
+    background:#0f2b52; /* dark blue */
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:40px 80px;
+}
+
+/* LEFT SIDE */
+.footer-left h4{
+    margin-bottom:10px;
+    font-family: Lato, "Lato Fallback";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(255, 255, 255);
+}
+
+.footer-left p{
+    margin:5px 0;
+}
+
+.footer-left a{
+    display:inline-block;
+    /* margin-top:15px; */
+    color:white;
+    text-decoration:underline;
+}
+
+/* RIGHT SIDE */
+.footer-right{
+    text-align:right;
+}
+
+.footer-right h4{
+    margin-bottom:10px;
+    font-family: Lato, "Lato Fallback";
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+color: rgb(255, 255, 255);
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom{
+    background:#222;
+    color:white;
+    padding:15px 80px;
+    font-size:14px;
+}
+
+.footer-bottom a{
+    color:white;    
+    text-decoration:none;
+}
+.footer-bottom p{
+color:white;
+}
+.footer-bottom a:hover{
+    text-decoration:underline;
+}
+@media(max-width:768px){
+    .footer-top{
+        flex-direction:column;
+        gap:20px;
+        text-align:left;
+    }
+
+    .footer-right{
+        text-align:left;
+    }
+}
