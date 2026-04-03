@@ -57,6 +57,7 @@ img {
 
 /* WRAPPER */
 .explore-wrapper {
+    padding-top: 10px;
     position: relative;
     /* display:inline-block; */
 }
@@ -238,129 +239,144 @@ img {
 .after {
     display: none;
     color: #1a73e8;
-    gap: 20px;
+    gap: 100px;
     font-size: 20px;
 }
+
+/* ================= HERO SECTION ================= */
 
 .total-hero {
     width: 80%;
     margin: auto;
-    position: relative;
+    padding-top: 60px;
 }
 
+/* layout */
+/* ================= HERO SECTION ================= */
+
+.total-hero {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+}
+
+/* layout */
 .hero {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    margin-top: 70px;
+    align-items: flex-start; /* 🔥 keeps both starting same line */
+    gap: 60px;
 }
+
+/* ================= LEFT SIDE ================= */
 
 .hero-left {
+    flex: 1;
     max-width: 520px;
+    display: flex;
+    flex-direction: column;
 }
 
+/* FIXED heading */
 .hero-left h5 {
-    font-size: 48px;
-    margin-bottom: 0px;
-    line-height: 0.8;
-    font-family: "Source Serif Pro", "Noto Serif", serif;
     font-size: 40px;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 1.2; /* 🔥 fixed from 0.8 */
     color: rgb(33, 36, 44);
-    max-width: 90%;
-
+    margin: 0 0 15px 0; /* 🔥 remove default top margin */
 }
 
+/* paragraph */
 .hero-left p {
-    font-family: Lato, "Noto Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 1.6;
     color: rgb(33, 36, 44);
-    max-width: 99%;
-
+    margin: 0 0 25px 0; /* 🔥 remove default spacing */
 }
 
+/* image */
 .hero-left img {
-    width: 90%;
-
+    width: 100%;
+    max-width: 450px;
 }
+
+/* ================= RIGHT SIDE ================= */
 
 .hero-right {
-    width: 360px;
-    /* margin-top: 80px */
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
-.hero-right a {
-    text-decoration: none;
-    color: #1a73e8;
-    font-size: 14px;
-}
-
-.hero-right h5 {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.hero-right p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
+/* heading */
 .hero-right h3 {
-    margin-top: 20px;
-    font-size: 22px;
+    font-size: 24px;
+    color: #1a1a1a;
+    margin: 0 0 25px 0; /* 🔥 remove default top margin */
 }
 
-.hero-right p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
-}
-
-.dob-section {
-    margin-top: 25px;
-}
-
-.dob-header {
+/* role cards */
+.role-card {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-.dob-header span {
-    color: #888;
-}
-
-.dob-inputs {
-    display: flex;
-    gap: 10px;
-}
-
-.dob-inputs select {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.next-btn {
-    width: 100%;
-    margin-top: 20px;
-    padding: 12px;
-    background: #1a73e8;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
+    align-items: center;
+    padding: 18px 20px;
+    border: 1px solid #d0d7e2;
+    border-radius: 8px;
+    margin-bottom: 15px;
     cursor: pointer;
-
+    background: #f8fafc;
+    transition: all 0.3s ease;
 }
+
+/* hover */
+.role-card:hover {
+    border-color: #1a73e8;
+    background: #eef3ff;
+}
+
+/* text */
+.role-card span {
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+/* arrow */
+.role-card i {
+    color: #1a73e8;
+    font-size: 18px;
+}
+
+/* login text */
+.login-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.login-text a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* ================= GLOBAL FIX (IMPORTANT) ================= */
+
+/* remove default browser spacing causing misalignment */
+h1, h2, h3, h4, h5, p {
+    margin-top: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+
+/* ================= RESPONSIVE ================= */
+
+
 button {
     max-width: 100%;
 }
@@ -460,7 +476,7 @@ h1, h2, h3, p {
 
 /* divider line */
 .menu-section+.menu-section {
-    border-top: 1px solid #ddd;
+    /* border-top: 1px solid #ddd; */
     padding-top: 20px;
 }
 
@@ -487,8 +503,7 @@ h1, h2, h3, p {
 }
 
 .ico {
-    width: 30px;
-    height: 70px;
+    
     border-radius: 50%;
     margin: 0 auto 20px;
     display: flex;
@@ -499,44 +514,35 @@ h1, h2, h3, p {
 }
 
 .ico img {
-    width: 100px;
+    width: 150px;
 }
 
-/* 
-.pink {
-    background: #e6c6cc;
-}
-
-.green {
-    background: #cfe2c6;
-}
-
-.orange {
-    background: #f4c7a1;
-} */
 
 .feature h3 {
-    font-size: 20px;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+font-size: 26px;
+font-weight: 400;
+line-height: 30px;
+color: rgb(33, 36, 44);
     margin-bottom: 15px;
-    color: #1a1a1a;
+    
 }
 
 .feature p {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #444;
+    font-family: Lato, "Noto Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: rgb(33, 36, 44);
 }
 
 .hero2 {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
-    /* center the whole section */
     display: flex;
     align-items: center;
-    /* vertical alignment */
     justify-content: space-between;
-    gap: 50px;
-    /* space between image and text */
+    gap: 150px;
     padding: 60px 0;
 }
 
@@ -547,14 +553,14 @@ h1, h2, h3, p {
 
 .imagess img {
     width: 100%;
-    max-width: 450px;
+    max-width: 600px;
     /* control image size */
 }
 
 /* RIGHT SIDE */
 .content {
     flex: 1;
-    max-width: 500px;
+    max-width: 300px;
 }
 
 .tag {
@@ -564,29 +570,36 @@ h1, h2, h3, p {
     margin-bottom: 10px;
 }
 
-.content h1 {
-    font-size: 40px;
-    line-height: 1.2;
+#cont{
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+font-size: 44px;
+font-weight:800;
+line-height: 48px;
+color: rgb(33, 36, 44);
     margin-bottom: 20px;
 }
 
-.desc {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 25px;
+#desc{
+    font-family: Lato, "Noto Sans", sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+color: rgb(33, 36, 44);
 }
 
-button {
+#button{
     background: #2563eb;
     color: white;
-    padding: 12px 24px;
+    padding: 15px 30px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    font-size: 20px;
+    margin-top: 30px;
 }
 
 .content {
-    max-width: 50%;
+    max-width: 800px;
 }
 
 .tag {
@@ -626,17 +639,22 @@ button:hover {
     background: #1f54b5;
 }
 
-.join {
-    padding: 80px 0;
-}
+
 
 .join-container {
     max-width: 80%;
-    margin: auto;
+    margin: 100px auto 300px auto;
     text-align: center;
     position: relative; /* 🔥 important */
 }
-
+.join-container h1{
+    margin-top: 60px;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+font-size: 44px;
+font-weight: 600;
+line-height: 48px;
+color: rgb(33, 36, 44);
+}
 /* Buttons stay on top */
 .buttons {
     display: flex;
@@ -646,21 +664,31 @@ button:hover {
     position: relative;
     z-index: 2;
 }
+.buttons button{
+    padding: 20px 150px;
+    font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+color: rgb(255, 255, 255);
+}
 
 /* Background image wrapper */
 .bg-image {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%); /* center it */
     z-index: 1; /* behind buttons */
     pointer-events: none; /* prevents blocking clicks */
 }
 
-/* Image styling */
+
 .bg-image img {
-    width: 400px; /* adjust to match design */
-    opacity: 1; /* keep full since it's design */
+    max-width: 700px; 
+    /* margin-bottom: 600px; */
+    /* width: 100%; */
+    opacity: 1; 
 }      
 .supporters {
     background: #f3f3f3;
@@ -675,8 +703,8 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
-    padding: 80px 0;
+    gap: 200px;
+    padding: 110px 0;
 }
 
 /* LEFT SIDE */
@@ -732,7 +760,7 @@ button {
 
 .image2 img {
     width: 100%;
-    max-width: 550px;
+    max-width: 600px;
 }
 /* FULL WIDTH BACKGROUND */
 .testimonial {
@@ -788,27 +816,27 @@ button {
 }
 
 .container4 {
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    /* gap: 40px; */
 }
 
 /* LEFT */
 .hero4-left img {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 /* RIGHT */
 .hero4-right {
-    max-width: 500px;
+    max-width: 700px;
 }
 
 .small-text {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2px;
     color: gray;
     margin-bottom: 15px;
@@ -816,25 +844,26 @@ button {
 
 /* 🔥 THIS replaces <br> */
 .title4 {
-    font-size: 40px;
-    line-height: 1.3;
-    margin-bottom: 20px;
-    color: #222;
-
-    max-width: 420px; /* controls where text breaks */
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+font-size: 46px;
+font-weight: 600;
+line-height: 48px;
+color: rgb(33, 36, 44);
+    max-width: 420px; 
 }
 
 .description4 {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 25px;
-
+    font-family: Lato, "Noto Sans", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+color: rgb(33, 36, 44);
+margin-top: 25px;
     max-width: 450px;
 }
 
 /* BUTTON */
-button {
+#button {
     background: #2563eb;
     color: white;
     border: none;
@@ -849,6 +878,7 @@ button:hover {
 }
 /* Top wave shape */
 .wave-top {
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -882,7 +912,7 @@ button:hover {
 
 /* Logos */
 .logos img {
-    max-width: 160px;
+    max-width: 200px;
     opacity: 0.85;
     filter: grayscale(100%);
 }
@@ -1067,7 +1097,7 @@ button:hover {
 
 }
 
-@media(max-width:767px) {
+@media(max-width:785px) {
 
     .explore-menu {
         display: block;
@@ -1131,6 +1161,13 @@ button:hover {
 
     .after {
         display: block;
+        gap: 60px;
+    }
+    .navbar{
+        max-width: 100%;
+    }
+    #spa{
+        margin-left: 20px;
     }
 
     .total-hero {
@@ -1218,7 +1255,7 @@ button:hover {
 
     .total-hero {
         max-width: 100%;
-        margin-top: 100px;
+        /* margin-top: 100px; */
     }
 
     .footer {
@@ -1271,5 +1308,40 @@ button:hover {
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+}
+
+@media(max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        max-width: 100%;
+    }
+
+    .hero-left img {
+        margin: auto;
+    }
+}
+
+@media(max-width: 500px) {
+    .total-hero {
+        width: 95%;
+    }
+
+    .hero-left h5 {
+        font-size: 28px;
+    }
+
+    .hero-right h3 {
+        font-size: 20px;
+    }
+
+    .role-card {
+        padding: 15px;
     }
 }
