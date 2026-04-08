@@ -1,0 +1,422 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ================= NAVBAR ================= */
+.navbase {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+/* LEFT NAV */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: ;
+}
+
+.explore-btn {
+    text-decoration: none;
+    color: rgb(24,101,242);
+    font-size: 14px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    gap: 5px;
+    margin-left: 30px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    
+}
+
+/* CENTER */
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.nav-center span{
+    color: rgb(10,42,102);
+    font-size: 14px;
+}
+
+.nav-center img {
+    width: 40px;
+}
+
+/* RIGHT */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: rgb(24,101,242);
+    font-size: 14px;
+}
+/* IMPORTANT: parent must be relative */
+.explore-wrapper {
+    position: relative;
+}
+
+/* HIDE DROPDOWN BY DEFAULT */
+.dropdown3 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 500px;
+    background: #fff;
+    display: none;   /* 🔥 THIS IS WHAT YOU MISSED */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+/* SHOW ON HOVER */
+.explore-wrapper:hover .dropdown3 {
+    display: flex;  /* use flex because you have left + right sections */
+}
+.nav-right button {
+    padding: 8px 15px;
+    background: rgb(24,101,242);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* MOBILE ICONS */
+.after {
+    display: none;
+}
+
+/* ================= MAIN SECTION ================= */
+.main2 {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.mainin {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.left1 {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#left2 {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+input:invalid {
+    box-shadow: none;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+#now{
+    color: rgb(24,101,242);
+}
+.divider span {
+    padding: 0 10px;
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+}
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.req {
+    font-size: 12px;
+    color: #999;
+}
+
+.pass-note {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+}
+.left1 h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.left1 p {
+    font-family: Lato, "Noto Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+color: rgb(33, 36, 44);
+    max-width: 380px;
+    margin: auto;
+}
+
+/* RIGHT SIDE */
+.right2 {
+    flex: 1;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.right2 h2 {
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* GOOGLE */
+.google-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    background: #fff;
+    margin-bottom: 15px;
+
+    display: flex;              /* 🔥 KEY */
+    align-items: center;        /* vertical alignment */
+    justify-content: center;    /* center everything */
+    gap: 10px;                  /* space between icon & text */
+
+    white-space: nowrap;        /* 🔥 prevents breaking */
+}
+.social-icons img{
+    width: 30px;
+    
+}
+.google-btn img {
+    width: 20px;
+    height: 20px;
+    position: static;   /* ✅ reset from absolute */
+}
+.google-btn span {
+    font-size: 14px;
+}
+.microsoft-btn img{
+    
+    width: 30px;
+}
+
+/* SOCIAL */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social-icons button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    background: #fff;
+}
+.bi-box-arrow-up-right{
+    font-weight: 600;
+}
+
+/* MICROSOFT */
+.microsoft-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+/* DIVIDER */
+
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* FORGOT */
+.forgot {
+    font-size: 13px;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+/* NAV LINKS HOVER */
+.navbar a:hover {
+    color: rgb(24,123,245);
+}
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgb(24,123,245);
+    text-decoration: underline;
+    text-decoration-color: rgb(24,123,245); /* 🔥 key */
+}
+.explore-btn:hover {
+    color: rgb(24,123,245);
+    text-decoration: underline;
+    text-decoration-color: rgb(24,123,245);
+}
+.nav-center span:hover{
+     color: rgb(24,123,245);
+    /* text-decoration: underline; */
+    /* text-decoration-color: rgb(24,123,245); */
+}
+.navbar a,
+.explore-btn {
+    transition: all 0.3s ease;
+}
+/* LOGIN */
+.login-btn {
+    padding: 12px;
+    background: #ccc;
+    color: #fff;
+    font-weight: bold;
+}
+.new{
+    margin-top: 20px;
+    font-family: Lato, "Noto Sans", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+color: rgb(95, 97, 103);
+
+}
+.new a{
+    text-decoration: none;
+}
+.last{
+margin-top: 20px;
+    font-family: Lato, "Noto Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+color: rgb(33, 36, 44);
+}
+
+/* ================= RESPONSIVENESS ================= */
+
+/* TABLET */
+@media (max-width: 900px) {
+    .mainin {
+        flex-direction: column;
+    }
+
+    .left1 {
+        order: 2;
+    }
+
+    .right2 {
+        order: 1;
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .navbar {
+        width: 95%;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+
+    .after {
+        display: flex;
+        gap: 15px;
+    }
+
+    .mainin {
+        width: 95%;
+    }
+
+    .right2 {
+        padding: 20px;
+    }
+
+    #left2 {
+        width: 100%;
+    }
+
+    .left1 h3 {
+        font-size: 18px;
+    }
+
+    .left1 p {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0b2545;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* CENTER LOGO */
+.header-center img {
+    height: 30px;
+}
+
+/* RIGHT */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-right button {
+    background: #2d7ff9;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 280px;
+    background: white;
+    padding: 20px;
+
+    position: sticky;
+    top: 60px; /* height of your header */
+    height: calc(100vh - 60px);
+
+    overflow-y: auto;
+}
+.course-title {
+    background: #e6f0ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.content h1 {
+    margin-bottom: 10px;
+}
+
+.points {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* LEGEND */
+.legend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.purple {
+    background: purple;
+}
+
+.light-purple {
+    background: #b19cd9;
+}
+
+.orange {
+    background: orange;
+}
+
+.border {
+    border: 2px solid gray;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.boxes {
+    display: flex;
+    gap: 8px;
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+/* COURSE TITLE ICON */
+.course-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #e6f0ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.course-title .icon {
+    width: 40px;
+    height: 40px;
+    background: teal;
+    border-radius: 8px;
+}
+
+/* UNIT TEXT */
+.units p {
+    margin: 6px 0;
+}
+
+.unit-title {
+    font-size: 12px;
+    color: gray;
+    margin-top: 15px;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+/* GRID IMPROVEMENT */
+.progress-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.unit-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 0;   /* ⬅ increase spacing */
+    border-bottom: 1px solid #e0e0e0; /* ⬅ line like image */
+}
+
+.unit-name {
+    width: 80px;
+}
+
+/* BOX COLORS */
+.gray {
+    background: #ccc;
+}
+
+
+.grid-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

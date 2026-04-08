@@ -366,9 +366,52 @@ color: rgb(243, 253, 248);
   text-align: center;
 }
 
+
+/* .counting {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;   
+  gap: 15px;
+  align-items: center;
+} */
+
+.counting{
+  display: flex;
+  flex-direction: row;
+}
+.country-title {
+  width: 100%;   /* puts "Country" on its own line */
+  font-weight: bold;
+  gap: 10px;
+}
+.view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;    
+}
+.country-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.view img {
+  width: 20px;
+  height: auto;
+}
+
+.count img {
+  width: 20px;   /* 🔥 FIX: was 5px (too small) */
+  height: auto;
+}
+
+
 /* 🔥 GRID LAYOUT */
 .footer-container {
-  width: 80%;              /* more width for large screens */
+  width: 100%;              /* more width for large screens */
   max-width: 1400px;      /* prevents over-stretching */
   margin: auto;
 
@@ -440,9 +483,7 @@ color: rgb(243, 253, 248);
 /* GLOBAL CONTAINER FIX */
 .header,
 .hero,
-.content,
-.container,
-.footer-container {
+.content {
   width: min(90%, 1400px);
 }
 @media (max-width: 1200px) {
@@ -554,8 +595,8 @@ color: rgb(243, 253, 248);
 @media(max-width:565px ){
     .container {
   max-width: 100%;
-  margin: auto;
-  display: flex;
+  margin: 0;
+  
   gap: 60px;
 }
 }
@@ -578,5 +619,63 @@ color: rgb(243, 253, 248);
 @media (max-width: 576px) {
   .states ul {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 414px) {
+  .footer{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;   /* 🔥 stack everything */
+    gap: 10px;
+    width: 100%;
+    margin: 0;          /* 🔥 remove centering space */
+    padding: 0 16px;
+    text-align: left;         /* keep text aligned like your design */
+  }
+
+  /* Each column becomes full width */
+  .footer-left,
+  .footer-links,
+  .col {
+    width: 100%;
+  }
+
+  /* Stack link columns */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Headings spacing */
+  .col h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  /* Links spacing */
+  .col a {
+    font-size: 13px;
+    margin-bottom: 8px;
+  margin-left: 20px;
+  }
+
+  /* Apps images */
+  .apps,
+  .goog {
+    width: 140px;
+    margin-top: 10px;
+    display: block;
+  }
+
+  /* Bottom section */
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
 }

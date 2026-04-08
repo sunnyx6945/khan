@@ -53,6 +53,7 @@ body{
 .unlock{
     max-width:50%;
     color:white;
+    padding-top: 130px;
 }
 
 .unlock h3{
@@ -64,6 +65,7 @@ body{
 .unlock p{
     font-size:16px;
     margin-bottom:15px;
+    color: white;
 }
 
 .second{
@@ -217,9 +219,11 @@ body{
 .grate{
     display: flex;
     justify-content: space-between;
+    gap: 25px;
 }
 .grate img{
-    width: 300px;
+     width: 100%;
+    height: auto;
 }
 .grate1{
     max-width: 33.3%;
@@ -499,7 +503,7 @@ text-align: center;
 /* ITEM */
 .faq-item{
     border-top:1px solid #ddd;
-    padding:15px 0;
+    padding:20px 0;
      box-shadow: 0 0 0 2px rgba(0,0,0,0.03);
 }
 
@@ -606,14 +610,295 @@ color:white;
 .footer-bottom a:hover{
     text-decoration:underline;
 }
-@media(max-width:768px){
-    .footer-top{
-        flex-direction:column;
-        gap:20px;
-        text-align:left;
+/* =========================
+   GLOBAL RESPONSIVE FIXES
+========================= */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix overflow issues */
+body, html {
+    overflow-x: hidden;
+}
+/* =========================
+   HERO FIX (MAIN ISSUE)
+========================= */
+
+/* make hero flexible instead of fixed height */
+.hero1 {
+    min-height: 100vh;   /* keeps full screen on large */
+    height: auto;        /* allows it grow when needed */
+    padding: 60px 0;     /* prevents content touching edges */
+}
+
+/* prevent content overflow inside hero */
+.total {
+    flex-wrap: wrap;  /* allows stacking when tight */
+}
+/* FIX GRATE WIDTH ISSUE (GLOBAL FIX) */
+.grate1,
+.grate2,
+.grate3 {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* FIX PARAGRAPH WIDTH INSIDE GRATE */
+.grate1 p,
+.grate2 p,
+.grate3 p {
+    max-width: 100%;
+}
+
+
+/* =========================
+   1024px (TABLETS)
+========================= */
+@media (max-width: 1024px) {
+
+    
+
+    .grate {
+        flex-direction: column;
+        gap: 40px;
+        
     }
 
+    .grate1, .grate2, .grate3  {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .provide {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .provider h2 {
+        width: 100%;
+    }
+
+    .provider p {
+        width: 100%;
+    }
+
+    .togethers {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .tiers {
+        flex-direction: column;
+    }
+
+    .plan-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .plan-text {
+        text-align: center;
+    }
+
+    .plan-text h2,
+    .plan-text p {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .plan-text button {
+        margin-left: 0;
+    }
+
+    /* .doubleorg {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    } */
+
+    .double-img img {
+        width: 100%;
+    }
+}
+
+/* =========================
+   900px
+========================= */
+@media (max-width: 900px) {
+
+    /* .unlock h3 {
+        font-size: 30px;
+    }
+
+    .make {
+        padding: 15px;
+    } */
+
+    .plan-img img {
+        width: 100%;
+    }
+
+    .footer-top {
+        padding: 30px 20px;
+    }
+}
+
+/* =========================
+   768px (SMALL TABLETS)
+========================= */
+@media (max-width: 768px) {
+
+    .total {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .unlock {
+        max-width: 100%;
+        padding-top: 50px;
+    }
+
+    .make {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero1 {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .unlock h3 {
+        font-size: 26px;
+    }
+
+    .unlock p {
+        font-size: 14px;
+    }
+
+    .make {
+        width: 100%;
+    }
+
+    .amounts {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-text h2 {
+        font-size: 28px;
+    }
+
+    .dee p {
+        max-width: 100%;
+    }
+
+    .faq {
+        width: 90%;
+    }
+}
+/* =========================
+   768px FIX (KEY PART)
+========================= */
+@media (max-width: 768px) {
+
+    .hero1 {
+        min-height: auto;       /* allow full expansion */
+        height: auto;
+        padding: 80px 20px;     /* more space = no overflow */
+    }
+
+    .total {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        height: auto;           /* remove forced height */
+    }
+
+    .unlock {
+        max-width: 100%;
+        padding-top: 0;         /* remove excess push */
+        text-align: center;
+    }
+
+    .make {
+        width: 100%;
+        max-width: 420px;       /* keeps it neat */
+        margin: 0 auto;
+    }
+    .footer-top {
+        flex-direction: column;
+        align-items: left;
+        gap: 30px;
+        height: auto;           /* remove forced height */
+    }
+    .doubleorg{
+         flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .footer-bottom{
+        display: none;
+    }
     .footer-right{
-        text-align:left;
+        text-align: left;
+    }
+}
+
+/* =========================
+   500px (MOBILE)
+========================= */
+@media (max-width: 500px) {
+
+    .unlock h3 {
+        font-size: 22px;
+    }
+
+    .make {
+        border-radius: 10px;
+    }
+
+    .buttons button {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .tier-card button {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        padding: 15px 20px;
+        text-align: center;
+    }
+}
+
+/* =========================
+   300px (VERY SMALL DEVICES)
+========================= */
+@media (max-width: 300px) {
+
+    .unlock h3 {
+        font-size: 18px;
+    }
+
+    .unlock p {
+        font-size: 12px;
+    }
+
+    .make {
+        padding: 10px;
+    }
+
+    .donate-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .faq-question h4 {
+        font-size: 13px;
     }
 }

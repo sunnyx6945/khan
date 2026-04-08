@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
 
 body {
@@ -276,6 +277,12 @@ img {
     display: flex;
     flex-direction: column;
 }
+.khanhide{
+    margin-top: 40px;
+    max-width: 520px;
+    text-align: left;
+    display: none;
+}
 
 /* FIXED heading */
 .hero-left h5 {
@@ -288,6 +295,21 @@ img {
 
 /* paragraph */
 .hero-left p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(33, 36, 44);
+    margin: 0 0 25px 0; /* 🔥 remove default spacing */
+}
+.khanhide h5 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2; /* 🔥 fixed from 0.8 */
+    color: rgb(33, 36, 44);
+    margin: 0 0 15px 0; /* 🔥 remove default top margin */
+}
+
+/* paragraph */
+.khanhide p {
     font-size: 18px;
     line-height: 1.6;
     color: rgb(33, 36, 44);
@@ -537,7 +559,7 @@ color: rgb(33, 36, 44);
 }
 
 .hero2 {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -663,14 +685,18 @@ color: rgb(33, 36, 44);
     gap: 15px;
     position: relative;
     z-index: 2;
+    margin-top: 20px;
 }
 .buttons button{
-    padding: 20px 150px;
+   padding: 20px;
+    width: 100%;
+    max-width: 300px;
     font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif;
 font-size: 14px;
 font-weight: 400;
 line-height: 21px;
 color: rgb(255, 255, 255);
+
 }
 
 /* Background image wrapper */
@@ -698,7 +724,7 @@ color: rgb(255, 255, 255);
 }
 /* SECTION LAYOUT */
 .hero3 {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -753,10 +779,19 @@ button {
 }
 
 /* RIGHT IMAGE */
+.image4 img {
+    width: 100%;
+    max-width: 550px;
+    display: none;
+}
 .image2 {
     flex: 1;
     text-align: right;
 }
+/* .image4 {
+    flex: 1;
+    text-align: right;
+} */
 
 .image2 img {
     width: 100%;
@@ -1034,6 +1069,47 @@ button:hover {
     .menu-content {
         display: block;
     }
+    .hero3{
+    display: block;
+    width: 90%;
+}
+.hero2{
+    display: block;
+    max-width: 60%;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+.content2 h1{
+    font-size: 30px;
+   width: 1000px;
+    margin-bottom: 20px;
+    
+    /* text-align: center; */
+}
+.content2{
+    max-width: 60%;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+.image2{
+    display: none;
+}
+.image4 img{
+    display: block;
+    padding-bottom: 50px;
+    margin:0 auto;
+    width: 800px;
+}
+    .container4{
+        display: block;
+        max-width: 60%;
+    /* text-align: center; */
+    margin: 0 auto;
+    }
+    .hero4-right{
+        padding-top: 30px;
+    }
+      
 }
 
 @media(max-width:900px) {
@@ -1104,9 +1180,48 @@ button:hover {
         /* remove grid */
         max-width: 95%;
         padding: 15px;
-        background: #fff;
+        background-color: rgb(245,245,245);
         border-radius: 10px;
+       
     }
+        .small-text {
+    font-size: 12px;
+    
+}
+.title4 {
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+font-size: 32px;
+font-weight: 400;
+line-height: 35px;
+color: rgb(33, 36, 44);
+    max-width: 420px; 
+}
+
+.description4 {
+    font-family: Lato, "Noto Sans", sans-serif;
+font-size: 14px;
+font-weight:250;
+line-height: 20px;
+color: rgb(33, 36, 44);
+margin-top: 25px;
+    max-width: 450px;
+}
+.bg-image {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center it */
+    z-index: 1; /* behind buttons */
+    pointer-events: none; /* prevents blocking clicks */
+}
+
+
+.bg-image img {
+    max-width: 500px; 
+    /* margin-bottom: 600px; */
+    /* width: 100%; */
+    opacity: 1; 
+}
 
     .explore-left,
     .explore-right {
@@ -1252,16 +1367,92 @@ button:hover {
     .hero-left {
         display: none;
     }
-
-    .total-hero {
+    .khanhide{
+        display: block;
+    }
+    .hero-right p{
+        text-align: left;
+    }
+    .container4{
+        text-align: left;
         max-width: 100%;
+    }
+    .container{
+        text-align: left;
+    }
+    .total-hero {
+        width: 100%;
         /* margin-top: 100px; */
     }
+    .content{
+        text-align: left;
+    }
+    .hero2{
+        max-width: 90%;
+    }
+   #cont{
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+font-size: 30px;
+font-weight:300;
+line-height: 30px;
+color: rgb(33, 36, 44);
+    margin-bottom: 20px;
+}
+#desc{
+    font-family: Lato, "Noto Sans", sans-serif;
+font-size: 14px;
+font-weight: 50;
+line-height: 30px;
+color: rgb(33, 36, 44);
+}
+.hero3{
+    display: block;
+    max-width: 90%;
+}
+.content2 h1{
+    font-size: 20px;
+    /* line-height: ; */
+    margin-bottom: 20px;
+   
+    /* text-align: center; */
+}
+.content2{
+    /* max-width: 70%; */
+    text-align: center;
+}
+.image2{
+    display: none;
+}
+.image4 img{
+    display: block;
+    padding-bottom: 50px;
+    
+}
+.quote {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 900px;
+}
 
     .footer {
         /* padding: 50px 20px; */
     }
-
+.join-container h1{
+    font-size: 30px;
+}
+.buttons button{
+    padding: 20px 100px;
+}
+.bg-image img {
+    max-width: 400px; 
+    /* margin-bottom: 600px; */
+    /* width: 100%; */
+    /* opacity: 1;  */
+}
+.buttons{
+    gap: 5px;
+}
 
 }
 
@@ -1344,4 +1535,28 @@ button:hover {
     .role-card {
         padding: 15px;
     }
+}
+@media(max-width:350px){
+    .supporters{
+        max-width: 100%;
+    }
+    .wave-top{
+        max-width: 100%;
+    }
+}
+@media(max-width: 490px){
+    .col h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* LINKS */
+.col a {
+    color: #c7d1dc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 10px;
+    transition: 0.3s;
+}
 }
