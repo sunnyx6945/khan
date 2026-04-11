@@ -35,6 +35,14 @@ body {
 /* CENTER LOGO */
 .header-center img {
     height: 30px;
+    margin-top: 1px;
+}
+.header-center span:hover{
+     color: #1a73e8;
+}
+.header-center span{
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 /* RIGHT */

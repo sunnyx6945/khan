@@ -13,10 +13,10 @@ body {
 
 .navbase {
     border-bottom: 1px solid #e5e5e5;
-    position: sticky;   /* or fixed if you want */
+    position: sticky;   
     top: 0;
-    z-index: 99999;     /* VERY important */
-    background: white;  /* prevent transparency */
+    z-index: 99999;     
+    background: white; 
 }
 
 .total-hero,
@@ -100,6 +100,10 @@ img {
     visibility: visible;
     transform: translateY(0);
 }
+.nav-center span{
+    margin-top: 5px;
+    font-size: 20px;
+}
 .nav-center span:hover{
     color: #1a73e8;
 }
@@ -107,7 +111,10 @@ img {
     color: 2px solid #1a73e8;
     text-decoration: underline; /* optional */
 }
+.role-card :hover{
+    color: yellow;
 
+}
 .nav-right button:hover {
     background: #1557b0; /* darker blue */
 }
@@ -198,7 +205,7 @@ img {
 }
 
 .nav-center img {
-    width: 25px;
+    width: 35px;
     font-weight: 600;
 }
 
@@ -369,8 +376,8 @@ img {
 
 /* hover */
 .role-card:hover {
-    border-color: #1a73e8;
-    background: #eef3ff;
+    border-color:2px solid #1a73e8;
+    background: #1a73e8;
 }
 
 /* text */
